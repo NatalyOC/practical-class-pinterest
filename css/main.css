@@ -164,7 +164,7 @@ i{
 
 /* Estilo para seccion de resultados */
 .search-result{
-   
+    top:100px;
     column-count: 4;
     column-gap: 20px;
     column-width: 220px;
