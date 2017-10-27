@@ -1,4 +1,4 @@
- header{
+header{
     position:fixed;
     background-color:#fff;
     top:0;
@@ -6,33 +6,108 @@
     left:0;
     z-index:1000;
     width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #d3d3d3;
+   
 }
-.main-menu{
-    border: 2px dashed red;
-    text-align: center;
-    padding:10px 0;
-    width:100%;
-    margin:0;
-    border-bottom:1px solid #d3d3d3;
+.main-menu {
+    
     display: inline-block;
+    /* padding: 0; */
+    margin:0; 
+    position: relative;
+    width: 100%;
+    height: 99%;
+    padding: 3px 0;
 }
 .main-menu ul{
-    display: inline-block;
+    display: inline-block; 
     list-style: none;
     padding: 0;
     margin: 0;
-    line-height: 40px;
+    line-height: 20px;
+    width:100%;
+    height: 100%;
+    position: relative;
 
+}
+.main-menu li{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 5px;
+    
+}
+.main-menu  div{
+  
+    display: inline-block;
+    position: absolute;
+    height: 40px;
+    top: 15%;
+}
+.search{
+    position: absolute;
+    width: 500px;
+    left: 5%;
+    top: 5%;
+    border-radius: 6px;
+    background-color:#efefef;
+    margin:0 20px; 
+    display: inline-block;
+    text-align: center;
+
+}
+.search-box{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    left: 0;
+
+}
+.search-box form{
+    
+      display: inline-block;
+      border: none;
+      outline: 0;
+     
+  }
+  .search-box input{
+      background-color: transparent;
+      border:none;
+      outline:none;
+      font-size: 14px;
+      
+  }
+.fa-search{
+    
+    position: absolute;
+    left:0;
+    top:5%;
+}
+.fa-times{
+    
+    position: absolute;
+    right:0;
+    top:5%;
+}
+
+.search-filter{
+    display: inline-block;
+    position: absolute;
+    left: 400px;
+    right: 0;
+    top:0%;     
 }
 .grey-icon{
-    display:inline-block;
-    font-size: 25px;
-    position: relative;
-    vertical-align: middle;
-    right: 0;
-
-}
-
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+     
+    /* vertical-align: middle; */
+    right:0;
+    text-align: center;
+    
+}   
 i{
     color: #b3b3b3
 }
@@ -40,18 +115,28 @@ i{
     border: 1px solid red;
     color:#bd081c;
     font-size: 50px;
-    position: relative;
+    position: absolute;
+    left: 20px;
+    top:15px;
 }
-
+.logo a{
+    
+    color: #b3b3b3;
+    font-size: 27px;
+}
+/*Estilo para el filtro */
 .filter-menu{
+    position: relative;
+    top:-5px;
     display: inline-block;
     border-radius: 6px;
     list-style: none;
-    padding:  10px 0;
+    padding: 10px 0;
     width: 100%;
     margin: 0;
     line-height: 40px;
     text-align: center;
+    background-color:#fff;
      
 }
 
@@ -61,57 +146,37 @@ i{
     border-radius: 6px;
     text-align: center;
     color:#fff;
-    /* background-color: #bd081c; */
     background-size: cover;
     background-position: center;
-    margin: 0 5px;
+    margin: 0;
     height: 60px;
      
 }
-/* 
-logo a{
-    
-    color: #b3b3b3;
-    font-size: 27px;
-}
 
-
-.search{
-    border-radius: 6px;
-    background-color:#efefef;
-    margin:0 20px;
-
-}
-.search-box{
-
-}
-.search-box form{
-    display: inline-block;
-    width: 85%;
-    border: none;
-    outline: 0;
-}
-.search-box input{
-    background-color: transparent;
-    border:none;
-    outline:none;
-    font-size: 14px;
-
-}
-
-*/
 .filter-menu span{
-    /*
-    color: #fff;
-    display: block;
-    font-weight: 700;
-    line-height: 10px;
-    top:15px;*/
     background-color: rgba(194,149,110,.5);
     color: #fff;
-    
     font-weight: 700;
     border-radius: 6px;
     display: block;
     
 }   
+
+/* Estilo para seccion de resultados */
+.search-result{
+   
+    column-count: 4;
+    column-gap: 20px;
+    column-width: 220px;
+    column-fill: auto;
+   
+    
+}
+.search-result img{
+   
+    margin: 0 2px 15px;
+    padding: 15px;
+    border: 2px solid #FAFAFA;
+    width: 100%;
+    
+}
