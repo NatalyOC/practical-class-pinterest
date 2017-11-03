@@ -1,12 +1,14 @@
-
+/*setear */
 *{
  margin:0;
  padding:0;   
-}    
+}   
+/* Establecemos propiedad de tamaño de caja y tipo de letra*/
 body{
-    box-sizing: border-box;
+    box-sizing: border-box;/*Especifica que los elementos <div> deben tener relleno y borde incluidos en el ancho y alto total del elemento */
     font-family: 'Source Sans Pro', sans-serif;
 }
+/* Establecemos posicionamiento fixed para el encabezado */
 header{
     position:fixed;
     background-color:#fff;
@@ -19,16 +21,9 @@ header{
   
    
 }
-.main-menu {
-    
+
+header li{
     display: inline-block;
-    margin:0; 
-    width: 100%;
-    padding: 10px 13px;
-
-
-    border-bottom: 1px solid #D3D3D3;
-    padding: 10px 20px 13px;
 }
 .main-menu ul{
     
@@ -36,19 +31,11 @@ header{
     margin: 0;
     width: 100%;
     text-align: center;
-   
-
-}
-.main-menu li{
-
-    display: inline-block;
     
+
 }
-.main-menu  div{
-  
-    display: inline-block;
-   
-}
+
+
 .logo{
     margin:  10px;
 }
@@ -67,11 +54,13 @@ header{
  }
 .search{
     
-    width: 70%;
+    width: 1025px;
     border-radius: 6px;
     background-color:#efefef;
     margin:0 20px; 
     text-align: left;
+    position: relative;
+    
 
 }
 .search-box{
@@ -87,45 +76,29 @@ header{
      
   }
   .search-box input{
-      background-color: transparent;
+       background-color: transparent;
       border:none;
       outline:none;
       font-size: 18px;
       padding: 0;
-      width: 100%;
-      
+      width: 100%; 
+        
   }
-.fa-search{
-    
-    
-    left:0;
-    top:5%;
-}
-.fa-times{
-    
-    
-    right:0;
-    top:5%;
-}
-
 .search-filter{
     display: inline-block;
     padding: 10px 10px 10px 0;
     text-align:left;
-  
-/*     
-    left: 400px;
-    right: 0;
-    top:0%;      */
+    position: absolute;
+
 }
 .gray-icon{
     margin: 0 10px;
     padding: 0 10px;
-    
+    top:0;
 }   
-/* i{
+.gray-icon i{
     color: #b5b5b5;
-} */
+} 
 
 /*Estilo para el filtro */
 .filter-menu{
@@ -163,7 +136,7 @@ header{
 
 /* Estilo para seccion de resultados */
 .search-result{
-    margin: 170px 80px 50px;
+    margin: 250px 80px 50px;
     column-count: 4;
     column-gap: 20px;
     min-width: 900px;
