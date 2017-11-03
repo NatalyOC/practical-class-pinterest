@@ -13,7 +13,7 @@ Crea una réplica de Pinterest con las imágenes que más te gusten.
 
 El reto consiste en maquetar la web **Pinterest**, este es el resultado final:
 
-![AppLove](http://subefotos.com/ver/?06d3ae6507b8d87c60910b66a58c4e9co.jpg) 
+![AppLove](https://github.com/NatalyOC/practical-class-pinterest/blob/master/assets/pinterest.jpg) 
 
 
 
