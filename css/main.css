@@ -47,6 +47,7 @@ header li{
  .logo a{
      
      color: #bd081c;
+     font-size: 40px;
 
  }
  .logo a:hover{
@@ -98,6 +99,7 @@ header li{
 }   
 .gray-icon i{
     color: #b5b5b5;
+    font-size: 26px;
 } 
 
 /*Estilo para el filtro */
@@ -155,3 +157,47 @@ header li{
 figure{
     margin-bottom: 20px;
 }
+/* Estilo para informacion */
+
+
+.post, .share {
+    float: left;
+  }
+  
+  .post {
+    width: 70%;
+  }
+  
+  .share {
+    width: 30%;
+  }
+  
+  .user-name {
+    font-weight: 700;
+  }
+  
+  .first-letter {
+    background-color: #D597A1;
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    text-align: center;
+    width: 30px;
+  }
+  
+  .first-letter span {
+    color: #FFF;
+    line-height: 30px;
+  }
+  
+  .hashtag {
+    margin-left: 35px;
+  }
+  
+  .share {
+    color: #B5B5B5;
+    font-size: 10px;
+  }
+  
+  
+  
